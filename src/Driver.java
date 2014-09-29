@@ -13,14 +13,7 @@ public class Driver {
 
     public static void main(String[] args) {
       
-//    public int item2;
-//    public int item3;
 
-    Scanner keyboard = new Scanner(System.in);
-
-    System.out.println (
-    "Please enter your first item(1-4)");
-    String item1 = keyboard.nextLine();
     
 }
 

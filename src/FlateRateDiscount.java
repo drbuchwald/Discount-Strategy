@@ -8,10 +8,23 @@
  * @author Dan
  */
 public class FlateRateDiscount implements DiscountStrategy{
-    private double baseDiscountRate;
+    private double baseDiscountRate = 0.10;
     private double price;
     private double qty;
     private double minItemPurchase = 3;
+    
+    //method to check that the number of items purchased is over three
+    //and calculate the percent off if so.
+    
+    public double getDiscount(){
+        double discount = 0;
+        
+        if(qty >= getMinItemPurchase()){
+            discount = baseDiscountRate * price * qty;
+        }
+        return discount;
+        
+    }
 
     public double getBaseDiscountRate() {
         return baseDiscountRate;
@@ -46,7 +59,9 @@ public class FlateRateDiscount implements DiscountStrategy{
     }
     
 
-    
+     public String message(){
+        return "Flat-Rate Discount";
+    }
     
     
 }

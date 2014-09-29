@@ -13,6 +13,14 @@ public class PercentOffDiscount implements DiscountStrategy{
     private double qty;
     private double minItemPurchase;
 
+    public double getDiscount(){
+        double discount = 0;
+                
+        discount = price * baseDiscountRate;
+   
+    return discount;
+}
+    
     public double getBaseDiscountRate() {
         return baseDiscountRate;
     }
@@ -45,5 +53,8 @@ public class PercentOffDiscount implements DiscountStrategy{
         this.minItemPurchase = minItemPurchase;
     }
     
-    
+    public String message(){
+        return "Percent-Off Dicsount";
+    }
+           
 }
