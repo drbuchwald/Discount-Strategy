@@ -10,7 +10,7 @@
 public class NoDiscount implements DiscountStrategy{
     private double baseDiscountRate;
     private double price;
-    private double qty;
+    private double quantity;
     private double minItemPurchase;
     
     public double getDiscount() {
@@ -33,12 +33,12 @@ public class NoDiscount implements DiscountStrategy{
         this.price = price;
     }
 
-    public double getQty() {
-        return qty;
+    public double getQuantity() {
+        return quantity;
     }
 
-    public void setQty(double qty) {
-        this.qty = qty;
+    public void setQuantity(double quantity) {
+        this.quantity = quantity;
     }
 
     public double getMinItemPurchase() {

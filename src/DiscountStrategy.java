@@ -17,7 +17,7 @@ public interface DiscountStrategy {
 
     double getPrice();
 
-    double getQty();
+    double getQuantity();
 
     void setBaseDiscountRate(double baseDiscountRate);
 
@@ -25,7 +25,7 @@ public interface DiscountStrategy {
 
     void setPrice(double price);
 
-    void setQty(double qty);
+    void setQuantity(double quantity);
 
     String message();
  

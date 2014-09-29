@@ -10,7 +10,7 @@
 public class FlateRateDiscount implements DiscountStrategy{
     private double baseDiscountRate = 0.10;
     private double price;
-    private double qty;
+    private double quantity;
     private double minItemPurchase = 3;
     
     //method to check that the number of items purchased is over three
@@ -19,8 +19,8 @@ public class FlateRateDiscount implements DiscountStrategy{
     public double getDiscount(){
         double discount = 0;
         
-        if(qty >= getMinItemPurchase()){
-            discount = baseDiscountRate * price * qty;
+        if(quantity >= getMinItemPurchase()){
+            discount = baseDiscountRate * price * quantity;
         }
         return discount;
         
@@ -42,12 +42,12 @@ public class FlateRateDiscount implements DiscountStrategy{
         this.price = price;
     }
 
-    public double getQty() {
-        return qty;
+    public double getQuantity() {
+        return quantity;
     }
 
-    public void setQty(double qty) {
-        this.qty = qty;
+    public void setQuantity(double quantity) {
+        this.quantity = quantity;
     }
 
     public double getMinItemPurchase() {

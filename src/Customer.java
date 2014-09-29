@@ -43,7 +43,7 @@ public class Customer {
         this.lastName = lastName;
     }
 
-    public String toString() {
+    public String message() {
         return firstName + " " + lastName + "\n"
                 + "Account Number: " + customerAccountNumber;
     }
